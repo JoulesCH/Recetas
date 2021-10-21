@@ -30,6 +30,8 @@
                       </div>
                       <div class="card-body">
                         <div class="row g-3 align-items-center">
+                          <div id="ingredients" style="margin:10px;"></div>
+
                           <div class="col-auto">
                             <span id="passwordHelpInline" class="form-text">
                               Especifíca cantidades
@@ -37,10 +39,13 @@
                           </div>
                           <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Ingrediente</span>
-                            <input type="text" class="form-control" placeholder="500gr de pasta Spaghetti" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            <input id='ingredient-input' type="text" class="form-control" placeholder="500gr de pasta Spaghetti" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            <div id="validationServer03Feedback" class="invalid-feedback">
+                              Ingresa la cantidad primero seguido del nombre del ingrediente
+                            </div>
                           </div>
                           <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Agregar ingrediente</button>
+                            <button onclick='update_ingredients()' class="btn btn-success" type="button">Agregar ingrediente</button>
                           </div>
                         </div>        
                       </div>
@@ -85,4 +90,6 @@
           </div>
         </div>
       </form>
+
+<script src="{{url_for('static', filename='js/ingredients.js')}}"></script>
 {% endblock %}

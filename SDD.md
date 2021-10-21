@@ -1,13 +1,13 @@
 # CRUD Recetas
 ---
-## Overview: Problema a resolver
+## Overview
 Tener una plataforma web en la que usuarios puedan ver, añadir, editar y elminar recetas.
 
 ### Alcance(Scope)
-Como es web puede llegar a un público amante de la cocina extenso con solo su navegador.
+Como es web puede llegar a un público extenso amante de la cocina, con solo su navegador.
 
 #### Casos de uso
-Para un sólo usuario
+Para un solo usuario
 - Ver recetas
 - Ver receta
 - Añadir receta
@@ -15,8 +15,7 @@ Para un sólo usuario
 - Crear receta
 - Editar receta
 - Ver pasos de la receta
-- Eliminar receta
-- 
+- Eliminar receta 
 
 #### Out of Scope (casos de uso No Soportados)
 - El usuario no puede checkear los ingredientes
@@ -26,7 +25,12 @@ Para un sólo usuario
 ## Arquitectura
 
 ### Diagramas
+
+Diagrama de clases
 ![img](./static/diagrama.png)
+
+Diagrama de secuencia
+![img](./static/sequenceDiagram.png)
 
 
 ### Modelo de datos
