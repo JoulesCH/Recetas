@@ -41,6 +41,7 @@ recetas.append(receta2)
 recetas.append(receta3)
 recetas.append(receta4)
 
+
 def index():
     """
     De ruta / se mostrarán todas las recetas
@@ -57,6 +58,7 @@ def index():
     Cada receta debe llevar un enlace para verla a detalle, incluídos los pasos y los ingredientes a detalle
     """
     return render_template('index.html', recetas=recetas)
+
 
 def crear_receta():
     """

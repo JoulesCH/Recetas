@@ -1,0 +1,19 @@
+title Ruta de experiencia
+
+index->receta:Clic en ver una receta
+
+
+note over editar_receta:Aquí también se\npuede eliminar
+
+index<-receta:Clic en el botón de **regresar**
+
+receta->editar_receta: Clic en el ícono \nde lápiz
+
+editar_receta --#blue> guardar_cambios: Modificar algún campo \n y clic en guardar cambios
+guardar_cambios --#blue>receta: Guardado correcto
+
+
+añadir_receta--#red>receta: Creación y guardado correcto
+añadir_receta<#red--crear: Llenar todos los campos \ny dar clic en el botón de **crear**
+
+index->crear: Clic en **crear receta**
