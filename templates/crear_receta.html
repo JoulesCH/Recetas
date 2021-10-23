@@ -45,7 +45,7 @@
                             </div>
                           </div>
                           <div class="d-grid gap-2">
-                            <button onclick='update_ingredients()' class="btn btn-success" type="button">Agregar ingrediente</button>
+                            <button onclick='agregar_ingredientes()' class="btn btn-success" type="button">Agregar ingrediente</button>
                           </div>
                         </div>        
                       </div>
@@ -91,5 +91,29 @@
         </div>
       </form>
 
-<script src="{{url_for('static', filename='js/ingredients.js')}}"></script>
+<!-- <script src="{{url_for('static', filename='js/ingredients.js')}}"></script> -->
+
+<script>
+  let i=0; // Inicializamos variable contador
+
+  // Obtener por sus id los valores de entrada y de salida
+  let input_ingrediente = document.getElementById('ingredient-input'); //input
+  let lista_ingredientes = document.getElementById('ingredients'); //output
+
+  function agregar_ingredientes(){ // Agregar al botón correspondiente onclick
+    if (input_ingrediente.value=='' || !input_ingrediente.value.includes('gr') )
+      return;
+    i +=1;
+
+    // Escribir en la etiqueta de salida (output)
+    lista_ingredientes.innerHTML +=  `
+                          <li> ${input_ingrediente.value} </li>
+                          <input type="hidden" name="ingrediente-${i}" value="${input_ingrediente.value}">
+                          `;
+    // Reiniciar valores de input por vacíos
+    input_ingrediente.value = '';
+  }
+
+</script>
+
 {% endblock %}

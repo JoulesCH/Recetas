@@ -25,4 +25,10 @@ class Receta:
     
     def mostrar_ingredientes(self):
         return self.ingredientes
+    
+    @property
+    def vegano(self):
+        for ingrediente in self.ingredientes:
+            if ingrediente.vegano == True:
+                return True
 
