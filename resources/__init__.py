@@ -6,22 +6,40 @@ recetas = []
 # receta test
 receta1 = Receta(
     nombre='Enchiladas', 
-    dificultad=5,
-    tiempo=120,
-    calorias=80,
+    dificultad='Normal',
+    tiempo='1hr',
+    calorias='Descripción del artículo',
     costo=500,
     calificacion=3,
 )
 receta2 = Receta(
     nombre='Chilaquiles', 
-    dificultad=5,
-    tiempo=120,
-    calorias=80,
-    costo=500,
-    calificacion=3,
+    dificultad='Fácil',
+    tiempo='30min',
+    calorias='Descripción del artículo',
+    costo=300,
+    calificacion=4,
+)
+receta3 = Receta(
+    nombre='Tacos', 
+    dificultad='Difícil',
+    tiempo='2hr',
+    calorias='Descripción del artículo',
+    costo=400,
+    calificacion=5,
+)
+receta4 = Receta(
+    nombre='Pasta', 
+    dificultad='Normal',
+    tiempo='25min',
+    calorias='Descripción del artículo',
+    costo=100,
+    calificacion=2,
 )
 recetas.append(receta1)
 recetas.append(receta2)
+recetas.append(receta3)
+recetas.append(receta4)
 
 def index():
     """
