@@ -73,3 +73,21 @@ def crear_receta():
         - pasos (lista)
     """
     return render_template('crear_receta.html')
+
+def ver_receta(id):
+    """
+    De ruta /ver_receta/<id> para ver los atributos de una receta en 
+    específico
+
+    Te paso un objeto llamado receta con los siguientes atributos:
+        - nombre
+        - tiempo
+        - costo
+        - dificultad
+        - calificacion
+        - calorias
+        - ingredientes (lista)
+        - pasos (lista)
+
+    """
+    return render_template('big_card.html', recetas=receta1)

@@ -1,7 +1,7 @@
 
 
 class Receta:
-    def __init__(self, nombre, dificultad, tiempo, calorias, costo, calificacion):
+    def __init__(self, nombre, dificultad, tiempo:int, calorias, costo, calificacion):
         self.nombre=nombre
         self.dificultad=dificultad
         self.tiempo=tiempo
