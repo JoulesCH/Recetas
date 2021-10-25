@@ -9,6 +9,7 @@
 {% block content %}
     
     <h3>Recetas</h3>
+    <a href="/ver_receta/1" style="text-decoration: none; color: black;">
     <div class="card-body">
         <div class="row">
         {%for receta in recetas%}
@@ -65,5 +66,5 @@
         {%endfor%}
         </div>
     </div> 
-
+    </a>
 {% endblock %}

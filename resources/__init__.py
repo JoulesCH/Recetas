@@ -90,4 +90,4 @@ def ver_receta(id):
         - pasos (lista)
 
     """
-    return render_template('big_card.html', recetas=receta1)
+    return render_template('big_card.html', receta=receta1)
