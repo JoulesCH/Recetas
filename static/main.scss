@@ -1,6 +1,9 @@
 $theme-colors: (
-	"primary": #FE8B6A
+	"primary": #e3170a,
+	"secondary": #e16036,
+	"success": #d6a99a,
+	"info": #d6cbc1,
+	"warning": rgba(233, 33, 19, 0.787)
 );
-$gray-100: #f8f9fa !default;
 
 @import "./node_modules/bootstrap/scss/bootstrap";

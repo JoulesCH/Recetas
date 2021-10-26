@@ -7,25 +7,25 @@
 {%endblock%}
 
 {% block content %}
-
-    <h1>Crea tu propia receta</h3>
+  
+    <h1 class="text-center texti">¡Crea tu propia receta!</h3>
     <form>
-        <div class="card-body">
+        <div class="card-body image-carousel image3">
           <div class="card">
             <div class="card-body">
               <div class="container">
                 <div class="mb-2">
-                  <label for="exampleFormControlInput1" class="form-label fs-4">Nombra tu receta</label>             
+                  <label for="exampleFormControlInput1" class="form-label fs-4 texti">Nombra tu receta</label>             
                 </div>
                 <div class="input-group mb-3">
                   <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                  <label class="btn btn-outline-success" for="btncheck1">Vegetariana</label>
-                  <input type="text" class="form-control" placeholder="Pasta alfredo clásica" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                  <label class="btn btn-outline-primary texti" for="btncheck1">Vegetariana</label>
+                  <input type="text" class="form-control texti" placeholder="Pasta alfredo clásica" aria-label="Example text with button addon" aria-describedby="button-addon1">
                 </div> 
                 <div class="row">
                   <div class="col-md">
                     <div class="card">
-                      <div class="card-header text-center fw-bold">
+                      <div class="card-header text-center fw-bold" style="background-color: #e3170a; color: whitesmoke;">
                         Ingredientes
                       </div>
                       <div class="card-body">
@@ -33,19 +33,19 @@
                           <div id="ingredients" style="margin:10px;"></div>
 
                           <div class="col-auto">
-                            <span id="passwordHelpInline" class="form-text">
+                            <span id="passwordHelpInline" class="form-text texti">
                               Especifíca cantidades
                             </span>
                           </div>
-                          <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Ingrediente</span>
-                            <input id='ingredient-input' type="text" class="form-control" placeholder="500gr de pasta Spaghetti" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                            <div id="validationServer03Feedback" class="invalid-feedback">
+                          <div class="input-group mb-3" >
+                            <span class="input-group-text texti" id="inputGroup-sizing-default">Ingrediente</span>
+                            <input id='ingredient-input' type="text" class="form-control texti" placeholder="500gr de pasta Spaghetti" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            <div id="validationServer03Feedback" class="invalid-feedback texti">
                               Ingresa la cantidad primero seguido del nombre del ingrediente
                             </div>
                           </div>
                           <div class="d-grid gap-2">
-                            <button onclick='agregar_ingredientes()' class="btn btn-success" type="button">Agregar ingrediente</button>
+                            <button onclick='agregar_ingredientes()' class="btn btn-warning texti" type="button" style="color: whitesmoke;">Agregar ingrediente</button>
                           </div>
                         </div>        
                       </div>
@@ -53,10 +53,10 @@
                   </div>
                   <div class="col-md">
                     <div class="card">
-                      <div class="card-header text-center fw-bold">
+                      <div class="card-header text-center fw-bold" style="background-color: #e3170a; color: whitesmoke;">
                         Instrucciones
                       </div>
-                      <div class="card-body">
+                      <div class="card-body texti">
                         <div class="form-check form-check-inline">
                           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                           <label class="form-check-label" for="inlineRadio1">Fácil</label>
@@ -70,17 +70,17 @@
                           <label class="form-check-label" for="inlineRadio1">Difícil</label>
                         </div>
                       </div>
-                      <div class="card-body">
+                      <div class="card-body" >
                         <div class="mb-3">
                           <div class="input-group mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Paso 1</span>
+                            <span class="input-group-text texti" id="inputGroup-sizing-default">Paso 1</span>
                             <input type="text" class="form-control" placeholder="Prepara la pasta" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                           </div>
-                          <label for="exampleFormControlTextarea1" class="form-label">Detalles</label>
-                          <textarea class="form-control" placeholder="Llena una olla grande con 1 litro de agua, agrega un puñado de sal y espera que hierva[..]" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <label for="exampleFormControlTextarea1" class="form-label texti">Detalles</label>
+                          <textarea class="form-control texti" placeholder="Llena una olla grande con 1 litro de agua, agrega un puñado de sal y espera que hierva[..]" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="d-grid gap-2">
-                          <button class="btn btn-success" type="button">Agregar paso</button>
+                          <button class="btn btn-warning texti" type="button" style="color: whitesmoke;">Agregar paso</button>
                         </div>
                       </div>
                     </div>
