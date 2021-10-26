@@ -1,3 +1,7 @@
+$hovver-icon: rgba(233, 33, 19, 0.787);
+$hovver: rgba(240, 12, 12, 0.527);
+$text: rgb(255, 255, 255);
+$border: rgb(255, 249, 249);
 $theme-colors: (
 	"primary": #e3170a,
 	"secondary": #e16036,
@@ -5,5 +9,8 @@ $theme-colors: (
 	"info": #d6cbc1,
 	"warning": rgba(233, 33, 19, 0.787)
 );
-
+$accordion-icon-active-color: $text;
+$accordion-button-active-bg:  $hovver;
+$accordion-button-active-color: $text;
+$accordion-button-focus-box-shadow: $hovver-icon;
 @import "./node_modules/bootstrap/scss/bootstrap";
